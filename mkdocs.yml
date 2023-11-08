@@ -1,4 +1,8 @@
-site_name: My Docs
+site_name: Paper
 
 theme:
   name: material
+
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
