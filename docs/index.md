@@ -12,4 +12,9 @@ I am currently focusing on Computer System and Architecture, especially **virtua
 
 - [ ] Bhargava, Ravi, et al. **"Accelerating two-dimensional page walks for virtualized systems."** *Proceedings of the 13th international conference on Architectural support for programming languages and operating systems*. 2008.
 
-  
+
+
+
+### Hardware Performance Counter
+
+- [ ] Lv, Yirong, et al. "**Counterminer: Mining big performance data from hardware counters.**" *2018 51st Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)*. IEEE, 2018.
