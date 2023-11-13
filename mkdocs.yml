@@ -10,6 +10,7 @@ markdown_extensions:
       custom_checkbox: true
   - attr_list
   - md_in_html
+  - def_list
 
 plugins:
   - glightbox
