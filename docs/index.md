@@ -65,3 +65,5 @@ I am currently focusing on Computer System and Architecture, especially **virtua
 - Princeton COS518: Advanced Computer Systems. [Link](https://www.cs.princeton.edu/courses/archive/spring19/cos518/syllabus.html)
 
 - CMU 15-712: Advanced and Distributed Operating Systems. [Link](https://www.cs.cmu.edu/~15712/syllabus.html)
+
+- UIUC CS523: Advanced Operating System. [Link](https://cs523-uiuc.github.io/spring23/index.html)
