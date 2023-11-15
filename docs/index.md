@@ -19,8 +19,7 @@ I am currently focusing on Computer System and Architecture, especially **virtua
 
 ### Hardware Performance Counter
 
-- [ ] Lv, Yirong, et al. "**Counterminer: Mining big performance data from hardware counters.**" *2018 51st Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)*. IEEE, 2018.
-
+- [x] Lv, Yirong, et al. "**Counterminer: Mining big performance data from hardware counters.**" *2018 51st Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)*. IEEE, 2018. [notes](performance-counter/Lv18.md)
 
 
 
