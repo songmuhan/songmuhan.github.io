@@ -1,0 +1,718 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../performance-counter/Lv18/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.10">
+    
+    
+      
+        <title>Bhargava08 - Paper</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fad675c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#summary" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Paper" class="md-header__button md-logo" aria-label="Paper" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Paper
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bhargava08
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Paper" class="md-nav__button md-logo" aria-label="Paper" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Paper
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Performance counter
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Performance counter
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../performance-counter/Lv18/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lv18
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Virtualization
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Virtualization
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Bhargava08
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Bhargava08
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-dimensional-page-walk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two-Dimensional Page Walk
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Two-Dimensional Page Walk">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#figure-1-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 1. (a)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#figure-1-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 1. (b)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#page-walk-characterization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Page Walk Characterization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#page-walk-cache-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Page Walk Cache Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Page Walk Cache Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#three-cache-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Three cache design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Results
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guest-performance-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guest Performance Improvement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-tlb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested TLB
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-dimensional-page-walk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two-Dimensional Page Walk
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Two-Dimensional Page Walk">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#figure-1-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 1. (a)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#figure-1-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figure 1. (b)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#page-walk-characterization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Page Walk Characterization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#page-walk-cache-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Page Walk Cache Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Page Walk Cache Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#three-cache-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Three cache design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Results
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guest-performance-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guest Performance Improvement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-tlb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested TLB
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Bhargava08</h1>
+
+<p>Bhargava, Ravi, et al. <strong>"Accelerating two-dimensional page walks for virtualized systems."</strong> <em>Proceedings of the 13th international conference on Architectural support for programming languages and operating systems</em>. 2008.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>This paper identifies high page entry reuse during two-dimensional page walk in virtualized systems, designed a new caching structure to accelerate memory access.</p>
+<hr />
+<p><a href="https://pages.cs.wisc.edu/~remzi/Classes/838/Spring2013/Notes/twodimwalk.pdf">Notes</a> from remzi CS838 virtualization Spring 2013 gives some question and corresponding answers to help understanding this paper.</p>
+<h2 id="two-dimensional-page-walk">Two-Dimensional Page Walk</h2>
+<p><a class="glightbox" href="../images/Bhargava08/figure1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="figure1" src="../images/Bhargava08/figure1.png" /></a></p>
+<h3 id="figure-1-a">Figure 1. (a)</h3>
+<p>cr3 stores the 4KB-aligned physical address of first level page table. Using <em>VA[47:39]</em> as index of first page table gives a physical address (cr3[<em>VA[47:39]</em>]) where stores the physical address of next level page table.</p>
+<h3 id="figure-1-b">Figure 1. (b)</h3>
+<p>gCR3 stores the <strong>guest</strong> physical address of first level page table. Using <em>VA[47:39]</em> as index of first page table gives a guest physical address  <strong>which requires translation by nested page table to give a system physical address</strong> where stores the  guest physical address of next level (guest) page table.</p>
+<p><strong>TLB: (Guest) Virtual Address to (System) Physical Address mapping.</strong></p>
+<h2 id="page-walk-characterization">Page Walk Characterization</h2>
+<p><strong>page entry reuse</strong></p>
+<ul>
+<li>
+<p>for native system, using less than 10% unique page entries to cover more than 90% page entry access. Higher reuse in virtualized system.</p>
+<p><a class="glightbox" href="../images/Bhargava08/figure2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="figure2" src="../images/Bhargava08/figure2.png" /></a></p>
+</li>
+</ul>
+<p><strong>unique page entry distribution</strong></p>
+<ul>
+<li>most unique page entry exists at {gPA, nL1} and {gL1, G}. More unique page entry results worse caching performance.</li>
+<li>
+<p>one gL4 entry covers 512 GB virtual memory.</p>
+<p><a class="glightbox" href="../images/Bhargava08/figure3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="figue3" src="../images/Bhargava08/figure3.png" style="zoom:50%" /></a></p>
+</li>
+</ul>
+<p><strong>Spatial locality</strong></p>
+<ul>
+<li>fixme: understand the this figure</li>
+</ul>
+<p><a class="glightbox" href="../images/Bhargava08/figure4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="figure4" src="../images/Bhargava08/figure4.png" style="zoom:35%" /></a></p>
+<h2 id="page-walk-cache-design">Page Walk Cache Design</h2>
+<p><strong>Page Wack Cache (PWC)</strong></p>
+<blockquote>
+<ul>
+<li>PWC is a small, full-associative, physically-taged <strong>page entry cache</strong>. </li>
+<li>The PWC stores page entries from all page table levels except L1, which is effectively stored in the TLB.</li>
+</ul>
+</blockquote>
+<ul>
+<li>PWC is used for accelerating the page walk when TLB miss.</li>
+<li>PWC dosen't store the L1 page table entry, because normal TLB stores the mapping of  virtual page number to physical page number, physical page number is exact the L1 page table entry. </li>
+</ul>
+<h3 id="three-cache-design">Three cache design</h3>
+<p><a class="glightbox" href="../images/Bhargava08/figure5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="figure5" src="../images/Bhargava08/figure5.png" style="zoom:40%" /></a></p>
+<p>One-Dimensional Page Walk Cache (<strong>1D_PWC</strong>)</p>
+<ul>
+<li>only caching guest dimension, namely only {G, gL4}, {G, gL3}, {G, gL2}. Note that {G,gL1} is not cached for the same reason, normal TLB stores the value of {G, gL1}.</li>
+</ul>
+<p>Two-Dimensional Page Walk Cache (<strong>2D_PWC</strong>)</p>
+<ul>
+<li>all page entries are cache. All page entries are tagged with their <strong>system physical address</strong>.</li>
+<li>fixme: how are {nL4, gL4},  {nL4, gL3},  {nL4, gL2},  {nL4, gL1},  {nL4, gPA} cached in PWC when all page entries are tagged with system physical address.</li>
+</ul>
+<p>Two-Dimensional Page Walk Cache + Nested TLB (<strong>2D_PWC+NT</strong>)</p>
+<ul>
+<li>
+<p>Nested TLB: map guest physical address to system physical address, more specificly use the guest physical address of guest page entry to cache the corresponding nL1 entry.</p>
+</li>
+<li>
+<p>Not cache the gPA level.</p>
+</li>
+</ul>
+<h2 id="results">Results</h2>
+<h4 id="guest-performance-improvement">Guest Performance Improvement</h4>
+<p><a class="glightbox" href="../images/Bhargava08/figure6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="figure6" src="../images/Bhargava08/figure6.png" style="zoom:40%" /></a></p>
+<h4 id="nested-tlb">Nested TLB</h4>
+<p><a class="glightbox" href="../images/Bhargava08/figure7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="figure7" src="../images/Bhargava08/figure7.png" style="zoom:40%" /></a></p>
+<p>nested TLB elimates most PWC Nested gL2, gL3, gL4 access.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c14ae12.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
