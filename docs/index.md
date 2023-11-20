@@ -67,3 +67,7 @@ I am currently focusing on Computer System and Architecture, especially **virtua
 - CMU 15-712: Advanced and Distributed Operating Systems. [Link](https://www.cs.cmu.edu/~15712/syllabus.html)
 
 - UIUC CS523: Advanced Operating System. [Link](https://cs523-uiuc.github.io/spring23/index.html)
+
+### Others
+
+- What Every Programmer Should Know About Memory. [Link](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
